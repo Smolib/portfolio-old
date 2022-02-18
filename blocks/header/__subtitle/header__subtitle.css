@@ -1,0 +1,10 @@
+.header__subtitle {
+  font-size: 4vw;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__subtitle {
+    font-size: 48px;
+  }
+}

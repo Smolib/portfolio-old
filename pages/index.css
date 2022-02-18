@@ -1,0 +1,44 @@
+@import url(../fonts/PoiretOne/poiretone.css);
+@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__name-zone/header__name-zone.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__description/header__description.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__photo-zone/header__photo-zone.css);
+@import url(../blocks/header/__photo/header__photo.css);
+
+@import url(../blocks/nav/nav.css);
+@import url(../blocks/nav/__lyst/nav__lyst.css);
+@import url(../blocks/nav/__item/nav__item.css);
+@import url(../blocks/nav/__link/nav__link.css);
+
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__paragraph/about__paragraph.css);
+@import url(../blocks/about/__subtitle/about__subtitle.css);
+
+@import url(../blocks/skills/skills.css);
+@import url(../blocks/skills/__card/skills__card.css);
+@import url(../blocks/skills/__title/skills__title.css);
+@import url(../blocks/skills/__lyst/skills__lyst.css);
+@import url(../blocks/skills/__item/skills__item.css);
+@import url(../blocks/skills/__subtitle/skills__subtitle.css);
+
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__area/projects__area.css);
+
+@import url(../blocks/project/project.css);
+@import url(../blocks/project/__image/project__image.css);
+@import url(../blocks/project/__side/project__side.css);
+@import url(../blocks/project/__side/_front/project__side_front.css);
+@import url(../blocks/project/__side/_back/project__side_back.css);
+@import url(../blocks/project/__title/project__title.css);
+@import url(../blocks/project/__subtitle/project__subtitle.css);
+@import url(../blocks/project/__more/project__more.css);
+@import url(../blocks/project/__link/project__link.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/_opened/popup_opened.css);

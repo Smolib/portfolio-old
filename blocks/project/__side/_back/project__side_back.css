@@ -1,0 +1,13 @@
+.project__side_back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project:hover .project__side_back {
+  transform: rotateY(0deg);
+}

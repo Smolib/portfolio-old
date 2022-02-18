@@ -1,0 +1,10 @@
+.header__title {
+  font-size: 6vw;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__title {
+    font-size: 72px;
+  }
+}

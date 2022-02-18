@@ -1,0 +1,8 @@
+.project__more {
+  font-size: 18px;
+  font-family: inherit;
+  background: transparent;
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+}
