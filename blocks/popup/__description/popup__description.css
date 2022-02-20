@@ -1,5 +1,5 @@
-.about__subtitle {
+.popup__description {
   font-size: 20px;
+  margin: 0;
   letter-spacing: 2px;
-  font-weight: 900;
 }

@@ -1,8 +1,10 @@
-.about {
+.text-section {
+  margin: auto;
+  margin-bottom: 80px;
   width: 100%;
   background-color: #fff;
-  margin-top: 80px;
+  margin-top: 60px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  padding: 20px;
+  padding: 30px 20px 20px;
   box-sizing: border-box;
 }

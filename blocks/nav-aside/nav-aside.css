@@ -1,14 +1,15 @@
-.nav {
+.nav-aside {
   background-color: #fff;
   position: sticky;
   top: 0;
   padding: 10px 0;
-  grid-column: span 2;
+  grid-row: span 10;
   z-index: 1;
+  height: 100vh;
 }
 
-@media screen and (max-width: 570px) {
-  .nav {
+@media screen and (min-width: 570px) {
+  .nav-aside {
     display: none;
   }
 }

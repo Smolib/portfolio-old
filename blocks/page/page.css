@@ -4,3 +4,10 @@
   max-width: 1200px;
   margin: auto;
 }
+
+@media screen and (max-width: 570px) {
+  .page {
+    display: grid;
+    grid-template-columns: 30px auto;
+  }
+}

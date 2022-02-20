@@ -6,8 +6,17 @@
     <title>Junior web-разработчик Кулаковская Мария</title>
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
-  <body class="root">
     <div class="page">
+      <body class="root">
+          <nav class="nav-aside">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#about">Обо мне</a></li>
+              <li class="nav__item"><a class="nav__link" href="#skills">Навыки</a></li>
+              <li class="nav__item"><a class="nav__link" href="#education">Образование</a></li>
+              <li class="nav__item"><a class="nav__link" href="#projects">Проекты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
       <header class="header">
         <div class="header__name-zone">
           <span class="header__description">Всем привет! Меня зовут</span>
@@ -21,43 +30,42 @@
       </header>
       <main>
         <nav class="nav">
-          <ul class="nav__lyst">
+          <ul class="nav__list">
             <li class="nav__item"><a class="nav__link" href="#about">Обо мне</a></li>
             <li class="nav__item"><a class="nav__link" href="#skills">Навыки</a></li>
             <li class="nav__item"><a class="nav__link" href="#education">Образование</a></li>
             <li class="nav__item"><a class="nav__link" href="#projects">Проекты</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <section id="about" class="about">
-          <p class="about__paragraph">
-            <span class="about__subtitle">Имя:</span>
+        <section id="about" class="text-section">
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Имя:</span>
             Кулаковская Мария
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">Город:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Город:</span>
             Москва, Зеленоград
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">Возраст:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Возраст:</span>
              30 лет
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">Что ищу:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Что ищу:</span>
             ищу постоянную работу на начальных позициях в области web-разработки.
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">Желаемый график работы:</span>
-            полностью удаленная занятость (если офис в Зеленограде или Москве - возможен гибридный формат).
-            Гибкое рабочее время - огромный плюс.
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Желаемый график работы:</span>
+            полностью удаленная занятость. Гибкое рабочее время - большой плюс.
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">Что могу предложить работодателю:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Что могу предложить работодателю:</span>
             с собой на работу возьму горящие глаза, жажду новых знаний, стремление доводить начатое до конца,
             весь список навыков из раздела ниже, а также оптимизм, общительность и чувство юмора.
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">Что хотелось бы получить от работодателя:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Что ожидаю от работодателя:</span>
             заинтересованность в обучении и росте своих сотрудников, интересные проекты, дружелюбную рабочую атмосферу.
           </p>
         </section>
@@ -75,7 +83,7 @@
             </ul>
           </div>
           <div class="skills__card">
-            <p class="skills__title">JavaScript:</p>
+            <p class="skills__title">Программная разработка:</p>
             <ul class="skills__lyst">
               <li class="skills__item"><span class="skills__subtitle">JavaScript</span> - основной язык при обучении. </li>
               <li class="skills__item"><span class="skills__subtitle">и тут</span> - основной язык при обучении. </li>
@@ -86,35 +94,46 @@
           <div class="skills__card">
             <p class="skills__title">Дополнительные инструменты:</p>
             <ul class="skills__lyst">
-              <li class="skills__item"><span class="skills__subtitle">git</span> - все проекты написаны с использованием git, нет опыта работы в команде</li>
-              <li class="skills__item"><span class="skills__subtitle">Gulp</span> - поверхностные знания</li>
-              <li class="skills__item"><span class="skills__subtitle">БЭМ</span> - понимание и использование принципов Nested BEM</li>
+              <li class="skills__item"><span class="skills__subtitle">git</span> - все проекты написаны с использованием git.</li>
+              <li class="skills__item"><span class="skills__subtitle">БЭМ</span> - понимание и использование принципов Nested BEM.</li>
+              <li class="skills__item"><span class="skills__subtitle">Gulp</span> - базовые знания</li>
 
             </ul>
           </div>
         </section>
-        <section id="education" class="about">
-          <p class="about__paragraph">
-            <span class="about__subtitle">2021-2022 Яндекс практикум:</span>
+        <section id="education" class="text-section">
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">2021-2022 Яндекс практикум:</span>
             курс по профессии &laquo;веб-разработчик&raquo;. Обучение в группе.
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">2021-2022 Хекслет:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">2021-2022 Хекслет:</span>
             курс по профессии &laquo;фронтенд-разработчик&raquo;. Самостоятельное обучение.
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">2021 Хекслет:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">2021 Хекслет:</span>
             курс по профессии &laquo;верстальщик&raquo;. Самостоятельное обучение.
           </p>
-          <p class="about__paragraph">
-            <span class="about__subtitle">2013 высшее образование:</span>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">2013 высшее образование:</span>
             непрофильное - ветеринарный врач.
           </p>
         </section>
-        <section id="projects" class="projects">
-          <button class="projects__btn-left">Налево</button>
-          <div class="projects__area"></div>
-          <button class="projects__btn-right">Направо</button>
+         <section id="projects" class="projects">
+        </section>
+        <section id="contacts" class="text-section text-section_width_small">
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">E-mail:</span>
+            <a href="mailto:kulakovskaya-mariya@yandex.ru" target="_blank">kulakovskaya-mariya@yandex.ru</a>
+          </p>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Phone, whatsapp:</span>
+            8-903-107-83-70
+          </p>
+          <p class="text-section__paragraph">
+            <span class="text-section__subtitle">Профиль github:</span>
+            <a href="https://github.com/Smolib" target="_blank"> https://github.com/Smolib</a>
+          </p>
         </section>
       </main>
       <section class="popup">
@@ -122,6 +141,7 @@
           <h2 class="popup__title"></h2>
           <p class="popup__subtitle"></h2>
           <p class="popup__description"></p>
+          <p class="popup__subtitle">Стек используемых технологий:</p>
           <ul class="popup__list">
           </ul>
           <button class="popup__close-button">Закрыть</button>

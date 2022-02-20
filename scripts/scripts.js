@@ -1,5 +1,5 @@
 const templateCard = document.querySelector('#project').content.querySelector('.project');
-const projectsArea = document.querySelector('.projects__area');
+const projectsArea = document.querySelector('.projects');
 const popup = document.querySelector('.popup');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const popupList = document.querySelector('.popup__list');
@@ -11,28 +11,72 @@ const projectsArray = [
     image: 'images/project01.png',
     github: 'https://github.com/Smolib/how-to-learn',
     pages: 'https://smolib.github.io/how-to-learn/',
-    description: 'описание бла-бла-бла',
+    description: 'Первый учебный проект в Яндекс.Практикуме. Начальное обучение верстке, использование HTML, CSS. Использовались кейфремы для анимации в CSS. Верстка по брифу в pdf. Следование принципам БЭМ при оформлении классов и файлов CSS. Работа проходила ревью в процессе обучения.',
     skills:
             [
-              'первое',
-              'второе',
-              'и третье!'
+              'HTML',
+              'CSS',
+              'БЭМ'
             ],
   },
   {
-    title: 'Научиться Учиться',
-    subtitle: 'Учебный проект в Яндекс. Практикуме',
-    image: 'images/project01.png',
-    github: 'https://github.com/Smolib/how-to-learn',
-    pages: 'https://smolib.github.io/how-to-learn/',
-    description: 'описание бла-бла-бла',
+    title: 'Когнитивные искажения',
+    subtitle: 'Учебный проект в Хекслете',
+    image: 'images/project03.png',
+    github: 'https://github.com/Smolib/layout-designer-project-lvl1',
+    pages: 'https://smolib.github.io/layout-designer-project-lvl1/',
+    description: 'Первый учебный проект в Хекслете. Начальное обучение верстке, использование HTML, CSS. Верстка по макету в Figma. Работа проходила автотесты на площадке Хекслета.',
     skills:
             [
-              'первое',
-              'второе',
-              'и третье!'
+              'HTML',
+              'CSS',
+              'Figma'
             ],
-  }
+  },
+  {
+    title: 'Путешествия по России',
+    subtitle: 'Учебный проект в Яндекс. Практикуме',
+    image: 'images/project02.png',
+    github: 'https://github.com/Smolib/russian-travel',
+    pages: 'https://smolib.github.io/russian-travel/',
+    description: 'Второй учебный проект в Яндекс.Практикуме. Углубленное обучение верстке. Адаптивная верстка под несколько разрешений. Использование grid и flex. Верстка с макета в Figma. Следование принципам БЭМ при оформлении классов и файлов CSS. Работа проходила ревью в процессе обучения.',
+    skills:
+            [
+              'HTML',
+              'CSS',
+              'БЭМ',
+              'Figma'
+            ],
+  },
+  {
+    title: 'Music Box',
+    subtitle: 'Учебный проект в Хекслете',
+    image: 'images/project04.png',
+    github: 'https://github.com/Smolib/layout-designer-project-lvl2',
+    pages: 'https://smolib.github.io/layout-designer-project-lvl2/',
+    description: 'Второй учебный проект в Хеклете. Углубленное обучение верстке. Сайт на две страницы. Адаптивная верстка под несколько разрешений. Использование препроцессора Sass. Использование grid и flex. Верстка с макета в Figma. Работа проходила автотесты на площадке Хекслета.',
+    skills:
+            [
+              'HTML',
+              'CSS',
+              'Figma',
+              'Sass'
+            ],
+  },
+  {
+    title: 'Сайт - портфолио',
+    subtitle: 'Pet-проект',
+    image: 'images/project05.png',
+    github: 'https://github.com/Smolib/portfolio',
+    pages: '/',
+    description: 'Проект создавался для отработки навыков верстки и программирования, а также для помощи в дальнейшем поиске работы. Собственный дизайн. Адаптивная верстка. Использование методологии БЭМ. Использованиее css-анимации. Использование JS для разработки карточек проектов.',
+    skills:
+            [
+              'HTML',
+              'CSS',
+              'JS'
+            ],
+  },
 ];
 
 const handleMoreClick = (evt) => {
@@ -48,6 +92,7 @@ const handleMoreClick = (evt) => {
 
   project.skills.forEach((skill) => {
     const listItem = document.createElement('li');
+    listItem.classList.add('popup__list-item');
     listItem.textContent = skill;
 
     popupList.append(listItem);
@@ -59,6 +104,8 @@ const popupFresh = () => {
     popupList.firstChild.remove();
   }
 }
+
+const createdCards = [];
 
 const createCard = (project) => {
   const card = templateCard.cloneNode(true);

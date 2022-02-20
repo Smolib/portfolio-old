@@ -1,0 +1,13 @@
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 570px) {
+  .nav__list {
+    position: sticky;
+  }
+}
